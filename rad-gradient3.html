@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>rad-gradient3.html (repeat)</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: white;
+      padding: 20px;
+    }
+
+    .bar {
+      width: 500px;
+      height: 60px;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .bg1 {
+      background: repeating-linear-gradient(
+        to right,
+        yellow,
+        orange 50px,
+        yellow 100px
+      );
+      color: black;
+    }
+
+    .bg2 {
+      background: repeating-linear-gradient(
+        18deg,
+        red,
+        white 40px,
+        blue 80px
+      );
+      color: black;
+    }
+
+    .bg3 {
+      background: repeating-radial-gradient(
+        circle,
+        yellow,
+        orange 10px,
+        yellow 20px
+      );
+      color: black;
+    }
+
+    .bg4 {
+      background: linear-gradient(to right, green, yellow, red, yellow, lightgreen);
+      color: black;
+    }
+
+    .label {
+      width: 80px;
+      text-align: center;
+      padding-left: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bar bg1"><span class="label">春曉</span></div>
+  <div class="bar bg2"><span class="label">送別</span></div>
+  <div class="bar bg3"><span class="label">紅豆</span></div>
+  <div class="bar bg4"><span class="label">雜詩</span></div>
+
+</body>
+</html>
